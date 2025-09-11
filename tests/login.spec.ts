@@ -13,7 +13,7 @@ test.describe('Login and Profile Verification', () => {
       await page.getByRole('button', { name: 'Continue' }).click();
 
       // Wait for navigation to dashboard
-      await page.waitForURL('http://localhost:5173/');
+      await page.waitForURL('http://localhost:5173/dashboard');
 
       await expect(page.getByTestId('user-fullname')).toContainText(user.fullName);
       await expect(page.getByTestId('user-username')).toContainText(user.username);

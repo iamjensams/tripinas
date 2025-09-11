@@ -6,8 +6,15 @@
   "scripts": {
     "start:frontend": "npm --workspace frontend start",
     "start:backend": "npm --workspace backend start",
-    "test": "npx playwright test"
+    "test": "npx playwright test",
+    "trace on": "npx playwright show-trace trace.zip",
+    "show report": "npx playwright show-report",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "run test with screenshot": "npx playwright test --project=chromium --reporter=html",
+    "open ui": "npx playwright test --ui"    
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/regie2197/tripinas.git"
